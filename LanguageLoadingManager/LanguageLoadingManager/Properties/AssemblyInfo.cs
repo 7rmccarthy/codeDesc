@@ -1,6 +1,21 @@
-﻿using System.Reflection;
-using System.Runtime.CompilerServices;
+﻿#region License
+
+// Copyright (c) 2017, Vira
+// All rights reserved.
+// Solution: LanguageLoadingManager
+// Project: LanguageLoadingManager
+// Filename: AssemblyInfo.cs
+// Date - created:2017.03.28 - 18:45
+// Date - current: 2017.03.28 - 19:24
+
+#endregion
+
+#region Usings
+
+using System.Reflection;
 using System.Runtime.InteropServices;
+
+#endregion
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
