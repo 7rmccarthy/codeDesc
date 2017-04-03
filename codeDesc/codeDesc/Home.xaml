@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="codeDesc.Home"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:codeDesc"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="0,0,2,0">
+            <StackPanel Grid.Column="0" Background="#555555">
+                <Label x:Name="codeDesc" Content="codeDesc" FontSize="35" HorizontalAlignment="Stretch" Margin="15,10,10,5" VerticalAlignment="Top"/>
+                <TextBlock Margin="15,20,10,5">
+            <Hyperlink FontSize="15" Click="Hyperlink_Click_newProject" Foreground="Cyan">New Project</Hyperlink>
+                </TextBlock>
+                <TextBlock Margin="15,0,10,5">
+            <Hyperlink FontSize="15" Click="Hyperlink_Click_openProject" Foreground="Cyan">Open Project</Hyperlink>
+                </TextBlock>
+
+            </StackPanel>
+        </Border>
+       
+        <StackPanel Grid.Column="1" Background="#000000">
+            
+        </StackPanel>
+    </Grid>
+</UserControl>
