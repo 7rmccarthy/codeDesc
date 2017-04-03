@@ -14,6 +14,8 @@
 
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 #endregion
 
@@ -47,6 +49,18 @@ namespace LanguageLoadingManager
         }
 
         /// <summary>
+        /// Applies the regex of the language pack on the code/text.
+        /// </summary>
+        /// <param name="toAlter">The text, that needs to get altered for the visualisation.</param>
+        /// <returns></returns>
+        public string ApplyOnString(string toAlter)
+        {
+            // TODO
+
+            return toAlter;
+        }
+
+        /// <summary>
         ///     Loads a language pack from an excel file.
         /// </summary>
         /// <param name="file">The excel file containing the keywords</param>
@@ -55,16 +69,33 @@ namespace LanguageLoadingManager
         {
             if (!File.Exists(file)) throw new FileNotFoundException();
 
-            var extension = Path.GetExtension(file);
-            var name = Path.GetFileNameWithoutExtension(file);
-            var words = new List<Keyword>(); // TODO: read excel file
+            var words = new List<Keyword>();
+            string programmingLanguage;
+            string extension;
 
-            //// TEMP!!!
-            words.Add(new Keyword("0000FFFF", "test"));
-            words.Add(new Keyword("00FF00FF", "test2", false));
-            words.Add(new Keyword("FF0000FF", "test3"));
+            using (var reader = new StreamReader(file))
+            {
+                var heading = reader.ReadLine();
+                programmingLanguage = heading.Split(';')[0];
+                extension = heading.Split(';')[1];
 
-            return new LanguagePack(name, extension, words);
+                while (!reader.EndOfStream)
+                {
+                    var line = reader.ReadLine();
+                    if (string.IsNullOrWhiteSpace(line) || line.StartsWith("#") || !line.IsValid())
+                    {
+                        continue;
+                    }
+
+                    words.Add(new Keyword(
+                        line.Split(',')[0],
+                        line.Split(',')[0],
+                        bool.Parse(line.Split(',')[0])
+                    ));
+                }
+            }
+
+            return new LanguagePack(programmingLanguage, extension, words);
         }
     }
 }

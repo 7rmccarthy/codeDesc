@@ -52,7 +52,7 @@ namespace LanguageLoadingManager
         ///     Defines which files should get read. (Keep in mind that this algorithm does only work on
         ///     excel files!)
         /// </param>
-        public static void Reload(string directory, string searchPattern = "*.xls")
+        public static void Reload(string directory, string searchPattern = "*.csv")
         {
             if (!IsInitialized || !Directory.Exists(directory)) return;
 

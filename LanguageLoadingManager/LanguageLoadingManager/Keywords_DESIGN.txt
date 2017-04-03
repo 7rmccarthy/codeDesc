@@ -1,0 +1,17 @@
+Example,*.txt
+
+############### NOTE ###############
+# This file is going to represent a keyword template for keywordpackage files.
+# Those files are going to be in a CSV kind of design.
+# Putting '#' in the front of the line is defining a comment.
+# At the beginning of a file, you need to define the language and the file extension for that specific language. (Splitted by ';')
+#
+# Each next line is going to define a keyword, containing:
+# -> The word itself
+# -> The color of the word
+# -> A boolean which defines if the current word is meant or the next one (with a ' ' (space) in between)
+####################################
+
+test,0000FFFF,true
+test2,00FF00FF,false
+test3,FF0000FF,true
