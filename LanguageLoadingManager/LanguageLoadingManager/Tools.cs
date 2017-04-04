@@ -22,7 +22,7 @@ namespace LanguageLoadingManager
         /// <returns>This function returns regex code based on the keyword and the color.</returns>
         public static string RegexFromString(this string keyword, bool current)
         {
-            return current ? $@"(\w +)(?<=\b\s{keyword})" : $@"(?<=\b{keyword}\s)(\w+)";
+            return current ? $@"(\s)({keyword})(\s)" : $@"(\s)({keyword})(\s)";
         }
 
         /// <summary>
@@ -32,10 +32,9 @@ namespace LanguageLoadingManager
         /// <returns>true: the line is valid; false: the line is invalid</returns>
         public static bool IsValid(this string keywordLine)
         {
-            bool doNotHaveCsharpSevenDot0;
-
+            bool voiding;
             return !string.IsNullOrWhiteSpace(keywordLine) && keywordLine.Split(',').Length == 3 &&
-                   keywordLine.Split(',')[1].OnlyHexInString() && bool.TryParse(keywordLine.Split(',')[2], out doNotHaveCsharpSevenDot0);
+                   keywordLine.Split(',')[1].OnlyHexInString() && bool.TryParse(keywordLine.Split(',')[2], out voiding);
         }
 
         /// <summary>

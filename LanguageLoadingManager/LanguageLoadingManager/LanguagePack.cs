@@ -52,10 +52,10 @@ namespace LanguageLoadingManager
         /// Applies the regex of the language pack on the code/text.
         /// </summary>
         /// <param name="toAlter">The text, that needs to get altered for the visualisation.</param>
-        /// <returns></returns>
+        /// <returns>Returns the altered code containing color codes.</returns>
         public string ApplyOnString(string toAlter)
         {
-            // TODO
+            Keywords.ForEach(x=>toAlter = x.ApplyOnString(toAlter));
 
             return toAlter;
         }
@@ -76,8 +76,8 @@ namespace LanguageLoadingManager
             using (var reader = new StreamReader(file))
             {
                 var heading = reader.ReadLine();
-                programmingLanguage = heading.Split(';')[0];
-                extension = heading.Split(';')[1];
+                programmingLanguage = heading.Split(',')[0];
+                extension = heading.Split(',')[1];
 
                 while (!reader.EndOfStream)
                 {
@@ -89,8 +89,8 @@ namespace LanguageLoadingManager
 
                     words.Add(new Keyword(
                         line.Split(',')[0],
-                        line.Split(',')[0],
-                        bool.Parse(line.Split(',')[0])
+                        line.Split(',')[1],
+                        bool.Parse(line.Split(',')[2])
                     ));
                 }
             }

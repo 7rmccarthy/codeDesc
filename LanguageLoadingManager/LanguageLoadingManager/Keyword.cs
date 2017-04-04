@@ -10,6 +10,8 @@
 
 #endregion
 
+using System.Text.RegularExpressions;
+
 namespace LanguageLoadingManager
 {
     /// <summary>
@@ -50,5 +52,12 @@ namespace LanguageLoadingManager
             Current = current;
             RegexCode = name.RegexFromString(current);
         }
+
+        /// <summary>
+        /// Applies the regex of the keyword on the code/text.
+        /// </summary>
+        /// <param name="toAlter">The text, that needs to get altered for the visualisation.</param>
+        /// <returns>Returns the altered code containing color codes.</returns>
+        public string ApplyOnString(string toAlter) => Regex.Replace(toAlter, Name, $"$1<{Color},{Name}>$3");
     }
 }

@@ -15,7 +15,7 @@
       <file leaf-file-name="LLM.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/LLM.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="128">
               <caret line="54" column="81" lean-forward="false" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="81" />
               <folding>
                 <marker date="1491212278780" expanded="true" signature="0:246" ph="License" />
@@ -36,30 +36,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LanguagePack.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LanguagePack.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/LanguagePack.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+            <state relative-caret-position="474">
+              <caret line="72" column="35" lean-forward="false" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
               <folding>
-                <marker date="1491216820052" expanded="true" signature="0:255" ph="License" />
-                <marker date="1491216820052" expanded="true" signature="17:243" ph="/* Copyright (c) 2017, Vira ... */" />
-                <marker date="1491216820052" expanded="true" signature="257:392" ph="Usings" />
-                <marker date="1491216820052" expanded="true" signature="279:380" ph="..." />
-                <marker date="1491216820052" expanded="true" signature="426:2958" ph="{...}" />
-                <marker date="1491216820052" expanded="true" signature="433:530" ph="///     The Language pack represents a programming language. ... " />
-                <marker date="1491216820052" expanded="true" signature="560:2956" ph="{...}" />
-                <marker date="1491216820052" expanded="true" signature="575:669" ph="///     The file extension of this language pack. ... " />
-                <marker date="1491216820052" expanded="true" signature="721:810" ph="///     All keywords are stored inside here. ... " />
-                <marker date="1491216820052" expanded="true" signature="868:951" ph="///     The name of the language pack. ... " />
-                <marker date="1491216820052" expanded="true" signature="1072:1185" ph="{...}" />
-                <marker date="1491216820052" expanded="true" signature="1195:1433" ph="/// Applies the regex of the language pack on the code/text. ... " />
-                <marker date="1491216820052" expanded="true" signature="1485:1554" ph="{...}" />
-                <marker date="1491216820052" expanded="true" signature="1564:1839" ph="///     Loads a language pack from an excel file. ... " />
-                <marker date="1491216820052" expanded="true" signature="1900:2950" ph="{...}" />
-                <marker date="1491216820052" expanded="true" signature="2154:2863" ph="{...}" />
-                <marker date="1491216820052" expanded="true" signature="2374:2849" ph="{...}" />
-                <marker date="1491216820052" expanded="true" signature="2542:2620" ph="{...}" />
+                <marker date="1491305430268" expanded="true" signature="0:255" ph="License" />
+                <marker date="1491305430268" expanded="true" signature="17:243" ph="/* Copyright (c) 2017, Vira ... */" />
+                <marker date="1491305430268" expanded="true" signature="257:392" ph="Usings" />
+                <marker date="1491305430268" expanded="true" signature="279:380" ph="..." />
+                <marker date="1491305430268" expanded="true" signature="426:3055" ph="{...}" />
+                <marker date="1491305430268" expanded="true" signature="433:530" ph="///     The Language pack represents a programming language. ... " />
+                <marker date="1491305430268" expanded="true" signature="560:3053" ph="{...}" />
+                <marker date="1491305430268" expanded="true" signature="575:669" ph="///     The file extension of this language pack. ... " />
+                <marker date="1491305430268" expanded="true" signature="721:810" ph="///     All keywords are stored inside here. ... " />
+                <marker date="1491305430268" expanded="true" signature="868:951" ph="///     The name of the language pack. ... " />
+                <marker date="1491305430268" expanded="true" signature="1072:1185" ph="{...}" />
+                <marker date="1491305430268" expanded="true" signature="1195:1481" ph="/// Applies the regex of the language pack on the code/text. ... " />
+                <marker date="1491305430268" expanded="true" signature="1533:1651" ph="{...}" />
+                <marker date="1491305430268" expanded="true" signature="1661:1936" ph="///     Loads a language pack from an excel file. ... " />
+                <marker date="1491305430268" expanded="true" signature="1997:3047" ph="{...}" />
+                <marker date="1491305430268" expanded="true" signature="2251:2960" ph="{...}" />
+                <marker date="1491305430268" expanded="true" signature="2471:2946" ph="{...}" />
+                <marker date="1491305430268" expanded="true" signature="2639:2717" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -69,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/Keywords_DESIGN.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -78,41 +78,57 @@
       <file leaf-file-name="Keyword.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/Keyword.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="368">
+              <caret line="60" column="88" lean-forward="false" selection-start-line="60" selection-start-column="88" selection-end-line="60" selection-end-column="88" />
               <folding>
-                <marker date="1491209494108" expanded="true" signature="0:250" ph="License" />
-                <marker date="1491209494108" expanded="true" signature="17:238" ph="/* Copyright (c) 2017, Vira ... */" />
-                <marker date="1491209494108" expanded="true" signature="284:1627" ph="{...}" />
-                <marker date="1491209494108" expanded="true" signature="291:387" ph="///     Represents text, which does have a special meaning. ... " />
-                <marker date="1491209494108" expanded="true" signature="413:1625" ph="{...}" />
-                <marker date="1491209494108" expanded="true" signature="428:500" ph="///     The keyword itself. ... " />
-                <marker date="1491209494108" expanded="true" signature="547:651" ph="///     The color, which this keyword should be colored in. ... " />
-                <marker date="1491209494108" expanded="true" signature="699:788" ph="///     The regex code to find that keyword. ... " />
-                <marker date="1491209494108" expanded="true" signature="840:975" ph="///     true: the speciel word is the current one; false: the special word is the next one ... " />
-                <marker date="1491209494108" expanded="true" signature="1023:1390" ph="///     Initializes an instance of this class. ... " />
-                <marker date="1491209494108" expanded="true" signature="1461:1619" ph="{...}" />
+                <marker date="1491306967756" expanded="true" signature="0:250" ph="License" />
+                <marker date="1491306967756" expanded="true" signature="17:238" ph="/* Copyright (c) 2017, Vira ... */" />
+                <marker date="1491306967756" expanded="true" signature="323:2066" ph="{...}" />
+                <marker date="1491306967756" expanded="true" signature="330:426" ph="///     Represents text, which does have a special meaning. ... " />
+                <marker date="1491306967756" expanded="true" signature="452:2064" ph="{...}" />
+                <marker date="1491306967756" expanded="true" signature="467:539" ph="///     The keyword itself. ... " />
+                <marker date="1491306967756" expanded="true" signature="586:690" ph="///     The color, which this keyword should be colored in. ... " />
+                <marker date="1491306967756" expanded="true" signature="738:827" ph="///     The regex code to find that keyword. ... " />
+                <marker date="1491306967756" expanded="true" signature="879:1014" ph="///     true: the speciel word is the current one; false: the special word is the next one ... " />
+                <marker date="1491306967756" expanded="true" signature="1062:1429" ph="///     Initializes an instance of this class. ... " />
+                <marker date="1491306967756" expanded="true" signature="1500:1658" ph="{...}" />
+                <marker date="1491306967756" expanded="true" signature="1668:1948" ph="/// Applies the regex of the keyword on the code/text. ... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tools.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Testing/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+              <folding>
+                <marker date="1491305953188" expanded="true" signature="6:62" ph="..." />
+                <marker date="1491305953188" expanded="true" signature="81:567" ph="{...}" />
+                <marker date="1491305953188" expanded="true" signature="110:565" ph="{...}" />
+                <marker date="1491305953188" expanded="true" signature="246:559" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tools.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/Tools.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+            <state relative-caret-position="187">
+              <caret line="19" column="82" lean-forward="false" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
               <folding>
-                <marker date="1491212064868" expanded="true" signature="0:248" ph="License" />
-                <marker date="1491212064868" expanded="true" signature="17:236" ph="/* Copyright (c) 2017, Vira ... */" />
-                <marker date="1491212064868" expanded="true" signature="282:2114" ph="{...}" />
-                <marker date="1491212064868" expanded="true" signature="316:2112" ph="{...}" />
-                <marker date="1491212064868" expanded="true" signature="331:706" ph="///     Generating regex code based on the parameter. ... " />
-                <marker date="1491212064868" expanded="true" signature="786:895" ph="{...}" />
-                <marker date="1491212064868" expanded="true" signature="905:1200" ph="/// Checks if the string is in a valid format. (keyword,color,boolean) ... " />
-                <marker date="1491212064868" expanded="true" signature="1260:1562" ph="{...}" />
-                <marker date="1491212064868" expanded="true" signature="1572:1837" ph="/// Some validation if the string is a hexvalue. ... " />
-                <marker date="1491212064868" expanded="true" signature="1899:2106" ph="{...}" />
+                <marker date="1491306495772" expanded="true" signature="0:248" ph="License" />
+                <marker date="1491306495772" expanded="true" signature="17:236" ph="/* Copyright (c) 2017, Vira ... */" />
+                <marker date="1491306495772" expanded="true" signature="282:2070" ph="{...}" />
+                <marker date="1491306495772" expanded="true" signature="316:2068" ph="{...}" />
+                <marker date="1491306495772" expanded="true" signature="331:706" ph="///     Generating regex code based on the parameter. ... " />
+                <marker date="1491306495772" expanded="true" signature="786:886" ph="{...}" />
+                <marker date="1491306495772" expanded="true" signature="896:1191" ph="/// Checks if the string is in a valid format. (keyword,color,boolean) ... " />
+                <marker date="1491306495772" expanded="true" signature="1251:1518" ph="{...}" />
+                <marker date="1491306495772" expanded="true" signature="1528:1793" ph="/// Some validation if the string is a hexvalue. ... " />
+                <marker date="1491306495772" expanded="true" signature="1855:2062" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -123,11 +139,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/LanguageLoadingManager/Keyword.cs" />
         <option value="$PROJECT_DIR$/LanguageLoadingManager/Keywords_DESIGN.txt" />
-        <option value="$PROJECT_DIR$/LanguageLoadingManager/Tools.cs" />
         <option value="$PROJECT_DIR$/LanguageLoadingManager/LLM.cs" />
         <option value="$PROJECT_DIR$/LanguageLoadingManager/LanguagePack.cs" />
+        <option value="$PROJECT_DIR$/Testing/Program.cs" />
+        <option value="$PROJECT_DIR$/LanguageLoadingManager/Tools.cs" />
+        <option value="$PROJECT_DIR$/LanguageLoadingManager/Keyword.cs" />
       </list>
     </option>
   </component>
@@ -165,11 +182,43 @@
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="LanguageLoadingManager (1 project)" />
+              <option name="myItemId" value="LanguageLoadingManager (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Testing" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanguageLoadingManager (2 projects)" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="LanguageLoadingManager" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanguageLoadingManager (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanguageLoadingManager" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Properties" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -178,6 +227,13 @@
         <option name="show-all-items" value="false" />
       </pane>
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -230,12 +286,12 @@
       <method />
     </configuration>
     <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
-      <option name="PROJECT_PATH" value="" />
-      <option name="PROJECT_KIND" value="None" />
-      <option name="PROJECT_TFM" value="" />
-      <option name="EXE_PATH" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Testing/Testing.csproj" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Testing/bin/Debug/Testing.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/bin/Debug" />
       <option name="USE_MONO" value="0" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <envs />
@@ -258,11 +314,12 @@
       <workItem from="1490702116072" duration="32000" />
       <workItem from="1490702577371" duration="1399000" />
       <workItem from="1491209552810" duration="4298000" />
+      <workItem from="1491304513967" duration="3529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5729000" />
+    <option name="totallyTimeSpent" value="9258000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -278,20 +335,20 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294423" sideWeight="0.5025" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294423" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.144375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294423" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994812" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -308,26 +365,126 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/LLM.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="81" lean-forward="false" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="81" />
+          <folding>
+            <marker date="1491212278780" expanded="true" signature="0:246" ph="License" />
+            <marker date="1491212278780" expanded="true" signature="17:234" ph="/* Copyright (c) 2017, Vira ... */" />
+            <marker date="1491212278780" expanded="true" signature="248:345" ph="Usings" />
+            <marker date="1491212278780" expanded="true" signature="270:333" ph="..." />
+            <marker date="1491212278780" expanded="true" signature="379:2225" ph="{...}" />
+            <marker date="1491212278780" expanded="true" signature="386:541" ph="///     The Language Loading Manager represents a manager, which handels the loading and saving of the language p ... " />
+            <marker date="1491212278780" expanded="true" signature="569:2223" ph="{...}" />
+            <marker date="1491212278780" expanded="true" signature="584:672" ph="///     A collection of all language packs. ... " />
+            <marker date="1491212278780" expanded="true" signature="752:883" ph="///     true: this manager got initialized; false: this manager has to get initialized ... " />
+            <marker date="1491212278780" expanded="true" signature="956:1053" ph="///     Initializes this manager and its submembers. ... " />
+            <marker date="1491212278780" expanded="true" signature="1093:1215" ph="{...}" />
+            <marker date="1491212278780" expanded="true" signature="1225:1604" ph="///     (Re)loads all language packs. ... " />
+            <marker date="1491212278780" expanded="true" signature="1688:2217" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/Keywords_DESIGN.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/Keyword.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <marker date="1491306967756" expanded="true" signature="0:250" ph="License" />
+            <marker date="1491306967756" expanded="true" signature="17:238" ph="/* Copyright (c) 2017, Vira ... */" />
+            <marker date="1491306967756" expanded="true" signature="323:2066" ph="{...}" />
+            <marker date="1491306967756" expanded="true" signature="330:426" ph="///     Represents text, which does have a special meaning. ... " />
+            <marker date="1491306967756" expanded="true" signature="452:2064" ph="{...}" />
+            <marker date="1491306967756" expanded="true" signature="467:539" ph="///     The keyword itself. ... " />
+            <marker date="1491306967756" expanded="true" signature="586:690" ph="///     The color, which this keyword should be colored in. ... " />
+            <marker date="1491306967756" expanded="true" signature="738:827" ph="///     The regex code to find that keyword. ... " />
+            <marker date="1491306967756" expanded="true" signature="879:1014" ph="///     true: the speciel word is the current one; false: the special word is the next one ... " />
+            <marker date="1491306967756" expanded="true" signature="1062:1429" ph="///     Initializes an instance of this class. ... " />
+            <marker date="1491306967756" expanded="true" signature="1500:1658" ph="{...}" />
+            <marker date="1491306967756" expanded="true" signature="1668:1948" ph="/// Applies the regex of the keyword on the code/text. ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/Tools.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+          <folding>
+            <marker date="1491306495772" expanded="true" signature="0:248" ph="License" />
+            <marker date="1491306495772" expanded="true" signature="17:236" ph="/* Copyright (c) 2017, Vira ... */" />
+            <marker date="1491306495772" expanded="true" signature="282:2070" ph="{...}" />
+            <marker date="1491306495772" expanded="true" signature="316:2068" ph="{...}" />
+            <marker date="1491306495772" expanded="true" signature="331:706" ph="///     Generating regex code based on the parameter. ... " />
+            <marker date="1491306495772" expanded="true" signature="786:886" ph="{...}" />
+            <marker date="1491306495772" expanded="true" signature="896:1191" ph="/// Checks if the string is in a valid format. (keyword,color,boolean) ... " />
+            <marker date="1491306495772" expanded="true" signature="1251:1518" ph="{...}" />
+            <marker date="1491306495772" expanded="true" signature="1528:1793" ph="/// Some validation if the string is a hexvalue. ... " />
+            <marker date="1491306495772" expanded="true" signature="1855:2062" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/LanguagePack.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+          <folding>
+            <marker date="1491305430268" expanded="true" signature="0:255" ph="License" />
+            <marker date="1491305430268" expanded="true" signature="17:243" ph="/* Copyright (c) 2017, Vira ... */" />
+            <marker date="1491305430268" expanded="true" signature="257:392" ph="Usings" />
+            <marker date="1491305430268" expanded="true" signature="279:380" ph="..." />
+            <marker date="1491305430268" expanded="true" signature="426:3055" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="433:530" ph="///     The Language pack represents a programming language. ... " />
+            <marker date="1491305430268" expanded="true" signature="560:3053" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="575:669" ph="///     The file extension of this language pack. ... " />
+            <marker date="1491305430268" expanded="true" signature="721:810" ph="///     All keywords are stored inside here. ... " />
+            <marker date="1491305430268" expanded="true" signature="868:951" ph="///     The name of the language pack. ... " />
+            <marker date="1491305430268" expanded="true" signature="1072:1185" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="1195:1481" ph="/// Applies the regex of the language pack on the code/text. ... " />
+            <marker date="1491305430268" expanded="true" signature="1533:1651" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="1661:1936" ph="///     Loads a language pack from an excel file. ... " />
+            <marker date="1491305430268" expanded="true" signature="1997:3047" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="2251:2960" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="2471:2946" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="2639:2717" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/Keyword.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
           <folding>
-            <marker date="1491209494108" expanded="true" signature="0:250" ph="License" />
-            <marker date="1491209494108" expanded="true" signature="17:238" ph="/* Copyright (c) 2017, Vira ... */" />
-            <marker date="1491209494108" expanded="true" signature="284:1627" ph="{...}" />
-            <marker date="1491209494108" expanded="true" signature="291:387" ph="///     Represents text, which does have a special meaning. ... " />
-            <marker date="1491209494108" expanded="true" signature="413:1625" ph="{...}" />
-            <marker date="1491209494108" expanded="true" signature="428:500" ph="///     The keyword itself. ... " />
-            <marker date="1491209494108" expanded="true" signature="547:651" ph="///     The color, which this keyword should be colored in. ... " />
-            <marker date="1491209494108" expanded="true" signature="699:788" ph="///     The regex code to find that keyword. ... " />
-            <marker date="1491209494108" expanded="true" signature="840:975" ph="///     true: the speciel word is the current one; false: the special word is the next one ... " />
-            <marker date="1491209494108" expanded="true" signature="1023:1390" ph="///     Initializes an instance of this class. ... " />
-            <marker date="1491209494108" expanded="true" signature="1461:1619" ph="{...}" />
+            <marker date="1491306967756" expanded="true" signature="0:250" ph="License" />
+            <marker date="1491306967756" expanded="true" signature="17:238" ph="/* Copyright (c) 2017, Vira ... */" />
+            <marker date="1491306967756" expanded="true" signature="323:2066" ph="{...}" />
+            <marker date="1491306967756" expanded="true" signature="330:426" ph="///     Represents text, which does have a special meaning. ... " />
+            <marker date="1491306967756" expanded="true" signature="452:2064" ph="{...}" />
+            <marker date="1491306967756" expanded="true" signature="467:539" ph="///     The keyword itself. ... " />
+            <marker date="1491306967756" expanded="true" signature="586:690" ph="///     The color, which this keyword should be colored in. ... " />
+            <marker date="1491306967756" expanded="true" signature="738:827" ph="///     The regex code to find that keyword. ... " />
+            <marker date="1491306967756" expanded="true" signature="879:1014" ph="///     true: the speciel word is the current one; false: the special word is the next one ... " />
+            <marker date="1491306967756" expanded="true" signature="1062:1429" ph="///     Initializes an instance of this class. ... " />
+            <marker date="1491306967756" expanded="true" signature="1500:1658" ph="{...}" />
+            <marker date="1491306967756" expanded="true" signature="1668:1948" ph="/// Applies the regex of the keyword on the code/text. ... " />
           </folding>
         </state>
       </provider>
@@ -337,16 +494,16 @@
         <state relative-caret-position="195">
           <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding>
-            <marker date="1491212064868" expanded="true" signature="0:248" ph="License" />
-            <marker date="1491212064868" expanded="true" signature="17:236" ph="/* Copyright (c) 2017, Vira ... */" />
-            <marker date="1491212064868" expanded="true" signature="282:2114" ph="{...}" />
-            <marker date="1491212064868" expanded="true" signature="316:2112" ph="{...}" />
-            <marker date="1491212064868" expanded="true" signature="331:706" ph="///     Generating regex code based on the parameter. ... " />
-            <marker date="1491212064868" expanded="true" signature="786:895" ph="{...}" />
-            <marker date="1491212064868" expanded="true" signature="905:1200" ph="/// Checks if the string is in a valid format. (keyword,color,boolean) ... " />
-            <marker date="1491212064868" expanded="true" signature="1260:1562" ph="{...}" />
-            <marker date="1491212064868" expanded="true" signature="1572:1837" ph="/// Some validation if the string is a hexvalue. ... " />
-            <marker date="1491212064868" expanded="true" signature="1899:2106" ph="{...}" />
+            <marker date="1491306495772" expanded="true" signature="0:248" ph="License" />
+            <marker date="1491306495772" expanded="true" signature="17:236" ph="/* Copyright (c) 2017, Vira ... */" />
+            <marker date="1491306495772" expanded="true" signature="282:2070" ph="{...}" />
+            <marker date="1491306495772" expanded="true" signature="316:2068" ph="{...}" />
+            <marker date="1491306495772" expanded="true" signature="331:706" ph="///     Generating regex code based on the parameter. ... " />
+            <marker date="1491306495772" expanded="true" signature="786:886" ph="{...}" />
+            <marker date="1491306495772" expanded="true" signature="896:1191" ph="/// Checks if the string is in a valid format. (keyword,color,boolean) ... " />
+            <marker date="1491306495772" expanded="true" signature="1251:1518" ph="{...}" />
+            <marker date="1491306495772" expanded="true" signature="1528:1793" ph="/// Some validation if the string is a hexvalue. ... " />
+            <marker date="1491306495772" expanded="true" signature="1855:2062" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -378,24 +535,24 @@
         <state relative-caret-position="180">
           <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding>
-            <marker date="1491216820052" expanded="true" signature="0:255" ph="License" />
-            <marker date="1491216820052" expanded="true" signature="17:243" ph="/* Copyright (c) 2017, Vira ... */" />
-            <marker date="1491216820052" expanded="true" signature="257:392" ph="Usings" />
-            <marker date="1491216820052" expanded="true" signature="279:380" ph="..." />
-            <marker date="1491216820052" expanded="true" signature="426:2958" ph="{...}" />
-            <marker date="1491216820052" expanded="true" signature="433:530" ph="///     The Language pack represents a programming language. ... " />
-            <marker date="1491216820052" expanded="true" signature="560:2956" ph="{...}" />
-            <marker date="1491216820052" expanded="true" signature="575:669" ph="///     The file extension of this language pack. ... " />
-            <marker date="1491216820052" expanded="true" signature="721:810" ph="///     All keywords are stored inside here. ... " />
-            <marker date="1491216820052" expanded="true" signature="868:951" ph="///     The name of the language pack. ... " />
-            <marker date="1491216820052" expanded="true" signature="1072:1185" ph="{...}" />
-            <marker date="1491216820052" expanded="true" signature="1195:1433" ph="/// Applies the regex of the language pack on the code/text. ... " />
-            <marker date="1491216820052" expanded="true" signature="1485:1554" ph="{...}" />
-            <marker date="1491216820052" expanded="true" signature="1564:1839" ph="///     Loads a language pack from an excel file. ... " />
-            <marker date="1491216820052" expanded="true" signature="1900:2950" ph="{...}" />
-            <marker date="1491216820052" expanded="true" signature="2154:2863" ph="{...}" />
-            <marker date="1491216820052" expanded="true" signature="2374:2849" ph="{...}" />
-            <marker date="1491216820052" expanded="true" signature="2542:2620" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="0:255" ph="License" />
+            <marker date="1491305430268" expanded="true" signature="17:243" ph="/* Copyright (c) 2017, Vira ... */" />
+            <marker date="1491305430268" expanded="true" signature="257:392" ph="Usings" />
+            <marker date="1491305430268" expanded="true" signature="279:380" ph="..." />
+            <marker date="1491305430268" expanded="true" signature="426:3055" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="433:530" ph="///     The Language pack represents a programming language. ... " />
+            <marker date="1491305430268" expanded="true" signature="560:3053" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="575:669" ph="///     The file extension of this language pack. ... " />
+            <marker date="1491305430268" expanded="true" signature="721:810" ph="///     All keywords are stored inside here. ... " />
+            <marker date="1491305430268" expanded="true" signature="868:951" ph="///     The name of the language pack. ... " />
+            <marker date="1491305430268" expanded="true" signature="1072:1185" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="1195:1481" ph="/// Applies the regex of the language pack on the code/text. ... " />
+            <marker date="1491305430268" expanded="true" signature="1533:1651" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="1661:1936" ph="///     Loads a language pack from an excel file. ... " />
+            <marker date="1491305430268" expanded="true" signature="1997:3047" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="2251:2960" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="2471:2946" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="2639:2717" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -406,32 +563,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="93" column="67" lean-forward="true" selection-start-line="93" selection-start-column="67" selection-end-line="93" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/Tools.cs">
+    <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/Properties/AssemblyInfo.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <marker date="1491212064868" expanded="true" signature="0:248" ph="License" />
-            <marker date="1491212064868" expanded="true" signature="17:236" ph="/* Copyright (c) 2017, Vira ... */" />
-            <marker date="1491212064868" expanded="true" signature="282:2114" ph="{...}" />
-            <marker date="1491212064868" expanded="true" signature="316:2112" ph="{...}" />
-            <marker date="1491212064868" expanded="true" signature="331:706" ph="///     Generating regex code based on the parameter. ... " />
-            <marker date="1491212064868" expanded="true" signature="786:895" ph="{...}" />
-            <marker date="1491212064868" expanded="true" signature="905:1200" ph="/// Checks if the string is in a valid format. (keyword,color,boolean) ... " />
-            <marker date="1491212064868" expanded="true" signature="1260:1562" ph="{...}" />
-            <marker date="1491212064868" expanded="true" signature="1572:1837" ph="/// Some validation if the string is a hexvalue. ... " />
-            <marker date="1491212064868" expanded="true" signature="1899:2106" ph="{...}" />
+            <marker date="1491209494108" expanded="true" signature="0:255" ph="License" />
+            <marker date="1491209494108" expanded="true" signature="17:243" ph="/* Copyright (c) 2017, Vira ... */" />
+            <marker date="1491209494108" expanded="true" signature="257:347" ph="Usings" />
+            <marker date="1491209494108" expanded="true" signature="279:335" ph="..." />
+            <marker date="1491209494108" expanded="true" signature="349:536" ph="/* General Information about an assembly is controlled through the following ... */" />
+            <marker date="1491209494108" expanded="true" signature="868:1078" ph="/* Setting ComVisible to false makes the types in this assembly not visible ... */" />
+            <marker date="1491209494108" expanded="true" signature="1255:1582" ph="/* Version information for an assembly consists of the following four values: ... */" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/LLM.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="128">
           <caret line="54" column="81" lean-forward="false" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="81" />
           <folding>
             <marker date="1491212278780" expanded="true" signature="0:246" ph="License" />
@@ -451,57 +604,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/Keywords_DESIGN.txt">
+    <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/Keyword.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="368">
+          <caret line="60" column="88" lean-forward="false" selection-start-line="60" selection-start-column="88" selection-end-line="60" selection-end-column="88" />
+          <folding>
+            <marker date="1491306967756" expanded="true" signature="0:250" ph="License" />
+            <marker date="1491306967756" expanded="true" signature="17:238" ph="/* Copyright (c) 2017, Vira ... */" />
+            <marker date="1491306967756" expanded="true" signature="323:2066" ph="{...}" />
+            <marker date="1491306967756" expanded="true" signature="330:426" ph="///     Represents text, which does have a special meaning. ... " />
+            <marker date="1491306967756" expanded="true" signature="452:2064" ph="{...}" />
+            <marker date="1491306967756" expanded="true" signature="467:539" ph="///     The keyword itself. ... " />
+            <marker date="1491306967756" expanded="true" signature="586:690" ph="///     The color, which this keyword should be colored in. ... " />
+            <marker date="1491306967756" expanded="true" signature="738:827" ph="///     The regex code to find that keyword. ... " />
+            <marker date="1491306967756" expanded="true" signature="879:1014" ph="///     true: the speciel word is the current one; false: the special word is the next one ... " />
+            <marker date="1491306967756" expanded="true" signature="1062:1429" ph="///     Initializes an instance of this class. ... " />
+            <marker date="1491306967756" expanded="true" signature="1500:1658" ph="{...}" />
+            <marker date="1491306967756" expanded="true" signature="1668:1948" ph="/// Applies the regex of the keyword on the code/text. ... " />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/Keyword.cs">
+    <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/Keywords_DESIGN.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <marker date="1491209494108" expanded="true" signature="0:250" ph="License" />
-            <marker date="1491209494108" expanded="true" signature="17:238" ph="/* Copyright (c) 2017, Vira ... */" />
-            <marker date="1491209494108" expanded="true" signature="284:1627" ph="{...}" />
-            <marker date="1491209494108" expanded="true" signature="291:387" ph="///     Represents text, which does have a special meaning. ... " />
-            <marker date="1491209494108" expanded="true" signature="413:1625" ph="{...}" />
-            <marker date="1491209494108" expanded="true" signature="428:500" ph="///     The keyword itself. ... " />
-            <marker date="1491209494108" expanded="true" signature="547:651" ph="///     The color, which this keyword should be colored in. ... " />
-            <marker date="1491209494108" expanded="true" signature="699:788" ph="///     The regex code to find that keyword. ... " />
-            <marker date="1491209494108" expanded="true" signature="840:975" ph="///     true: the speciel word is the current one; false: the special word is the next one ... " />
-            <marker date="1491209494108" expanded="true" signature="1023:1390" ph="///     Initializes an instance of this class. ... " />
-            <marker date="1491209494108" expanded="true" signature="1461:1619" ph="{...}" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/LanguagePack.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+        <state relative-caret-position="474">
+          <caret line="72" column="35" lean-forward="false" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
           <folding>
-            <marker date="1491216820052" expanded="true" signature="0:255" ph="License" />
-            <marker date="1491216820052" expanded="true" signature="17:243" ph="/* Copyright (c) 2017, Vira ... */" />
-            <marker date="1491216820052" expanded="true" signature="257:392" ph="Usings" />
-            <marker date="1491216820052" expanded="true" signature="279:380" ph="..." />
-            <marker date="1491216820052" expanded="true" signature="426:2958" ph="{...}" />
-            <marker date="1491216820052" expanded="true" signature="433:530" ph="///     The Language pack represents a programming language. ... " />
-            <marker date="1491216820052" expanded="true" signature="560:2956" ph="{...}" />
-            <marker date="1491216820052" expanded="true" signature="575:669" ph="///     The file extension of this language pack. ... " />
-            <marker date="1491216820052" expanded="true" signature="721:810" ph="///     All keywords are stored inside here. ... " />
-            <marker date="1491216820052" expanded="true" signature="868:951" ph="///     The name of the language pack. ... " />
-            <marker date="1491216820052" expanded="true" signature="1072:1185" ph="{...}" />
-            <marker date="1491216820052" expanded="true" signature="1195:1433" ph="/// Applies the regex of the language pack on the code/text. ... " />
-            <marker date="1491216820052" expanded="true" signature="1485:1554" ph="{...}" />
-            <marker date="1491216820052" expanded="true" signature="1564:1839" ph="///     Loads a language pack from an excel file. ... " />
-            <marker date="1491216820052" expanded="true" signature="1900:2950" ph="{...}" />
-            <marker date="1491216820052" expanded="true" signature="2154:2863" ph="{...}" />
-            <marker date="1491216820052" expanded="true" signature="2374:2849" ph="{...}" />
-            <marker date="1491216820052" expanded="true" signature="2542:2620" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="0:255" ph="License" />
+            <marker date="1491305430268" expanded="true" signature="17:243" ph="/* Copyright (c) 2017, Vira ... */" />
+            <marker date="1491305430268" expanded="true" signature="257:392" ph="Usings" />
+            <marker date="1491305430268" expanded="true" signature="279:380" ph="..." />
+            <marker date="1491305430268" expanded="true" signature="426:3055" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="433:530" ph="///     The Language pack represents a programming language. ... " />
+            <marker date="1491305430268" expanded="true" signature="560:3053" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="575:669" ph="///     The file extension of this language pack. ... " />
+            <marker date="1491305430268" expanded="true" signature="721:810" ph="///     All keywords are stored inside here. ... " />
+            <marker date="1491305430268" expanded="true" signature="868:951" ph="///     The name of the language pack. ... " />
+            <marker date="1491305430268" expanded="true" signature="1072:1185" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="1195:1481" ph="/// Applies the regex of the language pack on the code/text. ... " />
+            <marker date="1491305430268" expanded="true" signature="1533:1651" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="1661:1936" ph="///     Loads a language pack from an excel file. ... " />
+            <marker date="1491305430268" expanded="true" signature="1997:3047" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="2251:2960" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="2471:2946" ph="{...}" />
+            <marker date="1491305430268" expanded="true" signature="2639:2717" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <marker date="1491305953188" expanded="true" signature="6:62" ph="..." />
+            <marker date="1491305953188" expanded="true" signature="81:567" ph="{...}" />
+            <marker date="1491305953188" expanded="true" signature="110:565" ph="{...}" />
+            <marker date="1491305953188" expanded="true" signature="246:559" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanguageLoadingManager/Tools.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="82" lean-forward="false" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
+          <folding>
+            <marker date="1491306495772" expanded="true" signature="0:248" ph="License" />
+            <marker date="1491306495772" expanded="true" signature="17:236" ph="/* Copyright (c) 2017, Vira ... */" />
+            <marker date="1491306495772" expanded="true" signature="282:2070" ph="{...}" />
+            <marker date="1491306495772" expanded="true" signature="316:2068" ph="{...}" />
+            <marker date="1491306495772" expanded="true" signature="331:706" ph="///     Generating regex code based on the parameter. ... " />
+            <marker date="1491306495772" expanded="true" signature="786:886" ph="{...}" />
+            <marker date="1491306495772" expanded="true" signature="896:1191" ph="/// Checks if the string is in a valid format. (keyword,color,boolean) ... " />
+            <marker date="1491306495772" expanded="true" signature="1251:1518" ph="{...}" />
+            <marker date="1491306495772" expanded="true" signature="1528:1793" ph="/// Some validation if the string is a hexvalue. ... " />
+            <marker date="1491306495772" expanded="true" signature="1855:2062" ph="{...}" />
           </folding>
         </state>
       </provider>
