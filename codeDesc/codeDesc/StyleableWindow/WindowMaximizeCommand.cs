@@ -23,12 +23,12 @@ namespace codeDesc.StyleableWindow
                 if (window.WindowState == WindowState.Maximized)
                 {
                     window.WindowState = WindowState.Normal;
-                    window.IconSource = new ImageSourceConverter().ConvertFromString(@"C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\Icons\Maximize_btn.png") as ImageSource;
+                    window.IconSource = new ImageSourceConverter().ConvertFromString("../../Icons/RestoreWindow_btn.png") as ImageSource;
                 }
                 else
                 {
                     window.WindowState = WindowState.Maximized;
-                    window.IconSource = new ImageSourceConverter().ConvertFromString(@"C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\Icons\RestoreWindow_btn.png") as ImageSource;
+                    window.IconSource = new ImageSourceConverter().ConvertFromString("../../Icons/RestoreWindow_btn.png") as ImageSource;
                     Console.WriteLine(window.IconSource);
                 }               
             }           

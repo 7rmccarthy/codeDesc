@@ -34,6 +34,7 @@ namespace codeDesc
         #region TabControl
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            
         }
         public void btnDelete_Click(object sender, RoutedEventArgs e)
         {
@@ -75,21 +76,12 @@ namespace codeDesc
         public void AddTabItem(string tabname)
         {
             int count = tabItems.Count;
-            //string name = "";
-            //AddTabDialog addtabwindow = new AddTabDialog();
-            //addtabwindow.ShowDialog();
-            //if (addtabwindow.DialogResult.Value)
-            //{
-            //    name = addtabwindow.output;
-            //}
-            // create new tab item
+           
             TabItem tab = new TabItem();
             tab.Header = string.Format(tabname);
             tab.Name = string.Format(tabname);
             tab.HeaderTemplate = tabDynamic.FindResource("TabHeader") as DataTemplate;
             tab.ContentTemplate = tabDynamic.FindResource("TabItem") as DataTemplate;
-
-            
 
             // insert tab item right before the last (+) tab item
             tabItems.Insert(count , tab);

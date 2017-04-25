@@ -67,7 +67,7 @@ namespace codeDesc
         #endregion
 
         #region Icon
-        private ImageSource iconSource = new ImageSourceConverter().ConvertFromString(@"C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\Icons\Maximize_btn.png") as ImageSource;
+        private ImageSource iconSource = new ImageSourceConverter().ConvertFromString("../../Icons/Maximize_btn.png") as ImageSource;
         public ImageSource IconSource
         {
             get
