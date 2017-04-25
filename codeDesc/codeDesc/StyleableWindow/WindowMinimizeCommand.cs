@@ -6,7 +6,6 @@ namespace codeDesc.StyleableWindow
 {
     public class WindowMinimizeCommand : ICommand
     {
-
         public bool CanExecute(object parameter)
         {
             return true;

@@ -5,25 +5,22 @@
         xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
         Background="{DynamicResource MaterialDesignPaper}"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-        Title="codeDesc"  x:Name="testw" Style="{StaticResource CustomWindowStyle}" >
-
-
-    <Grid >
+        Title="codeDesc"  Style="{StaticResource CustomWindowStyle}" >
+       
+        <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="52"/>
             <RowDefinition Height="70"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-
         <Border Grid.Row="0" BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="0,0,0,3">
             <StackPanel Orientation="Horizontal" Grid.Row="0">
                 <Button Content="File" Click="btn_top_menu" ContextMenuService.IsEnabled="False"  RenderTransformOrigin="0.5,0.5"  Margin="10,0,5,0" md:ShadowAssist.ShadowDepth="Depth1">
                     <Button.ContextMenu>
                         <ContextMenu Foreground="White">
-                            <MenuItem Header="Menu 1" Foreground="White"/>
-                            <MenuItem Header="Menu 1" Foreground="White" />
-                            <MenuItem Header="Menu 1" Foreground="White" />
-                            <MenuItem Header="Menu 1" Foreground="White" />
+                            <MenuItem Header="New" Foreground="White" Click="btn_top_menu_file_new"/>
+                            <MenuItem Header="Open" Foreground="White" Click="btn_top_menu_file_open"/>
+                            <MenuItem Header="Save" Foreground="White" Click="btn_top_menu_file_save"/>
                         </ContextMenu>
                     </Button.ContextMenu>
                 </Button>
@@ -77,15 +74,17 @@
                 <ColumnDefinition Name="SideMenu" Width="25"/>
             </Grid.ColumnDefinitions>
             <Border Grid.Column="0" BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="0,3,3,0">
-                <DockPanel>
-                    <uccustom:Home VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch"/>
+                <DockPanel Name="dp_ucs">
+                    <uccustom:Home x:Name="Home_uc"  HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Visibility="{Binding Path=HomeVis,RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"/>
+                    <uccustom:TabControl x:Name="TC_uc"  HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Visibility="{Binding Path=TCVis,RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"/>
                 </DockPanel>
             </Border>
-            <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Left"/>
+            <GridSplitter Name="GridSplitter" Grid.Column="1" Width="5" HorizontalAlignment="Left"/>
             <Border Grid.Column="1" BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="0,3,0,0">
                 <StackPanel >
-                    
-                </StackPanel></Border>
+                    <uccustom:ProjectSolutionExplorer HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+                </StackPanel>
+            </Border>
             <Border Grid.Column="2" BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="0,3,0,0">
                 <Button HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Height="Auto" Margin="5" Click="btn_project_solution"/>
             </Border>

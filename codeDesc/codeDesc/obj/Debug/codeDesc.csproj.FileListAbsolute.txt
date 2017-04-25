@@ -18,7 +18,9 @@ C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\bin\De
 C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\obj\Debug\codeDesc.csprojResolveAssemblyReference.cache
 C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\obj\Debug\App.baml
 C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\obj\Debug\Home.g.cs
-C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\obj\Debug\Home.baml
-C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\obj\Debug\TabControl.g.cs
-C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\obj\Debug\TabControl.baml
+C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\obj\Debug\UserControls\Home.g.cs
+C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\obj\Debug\UserControls\ProjectSolutionExplorer.g.cs
+C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\obj\Debug\UserControls\TabControl.g.cs
+C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\obj\Debug\UserControls\Home.baml
+C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\obj\Debug\UserControls\ProjectSolutionExplorer.baml
+C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\obj\Debug\UserControls\TabControl.baml

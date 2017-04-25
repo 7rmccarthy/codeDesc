@@ -7,17 +7,18 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <TabControl TabIndex="1" Grid.Column="1" SelectionChanged="TabControl_SelectionChanged" Margin="10" Background="#424242" Foreground="White" Name="tabDynamic" ItemsSource="{Binding}">
+        <TabControl TabIndex="1" Grid.Column="1" SelectionChanged="TabControl_SelectionChanged" Margin="10"  Name="tabDynamic" ItemsSource="{Binding }">
             <TabControl.Resources>
-
                 <DataTemplate x:Key="TabHeader" DataType="TabItem">
                     <DockPanel>
-
-                        <Button Name="btnDelete" DockPanel.Dock="Right" Content="X"  Click="btnDelete_Click" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type TabItem}}, Path=Name}" Width="15" Height="15">
-
+                        <Button Name="btnDelete" DockPanel.Dock="Right"  Click="btnDelete_Click" Background="#ffffff" Style="{StaticResource WindowButton}" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type TabItem}}, Path=Name}"  Width="10" Height="10">
+                            <Image Name="Close_icon" Source="../Icons/Close_black_btn.png" Height="10" Width="10" />
                         </Button>
                         <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType={x:Type TabItem}}, Path=Header}"/>
                     </DockPanel>
+                </DataTemplate>
+                <DataTemplate x:Key="TabItem" DataType="TabItem">
+                    <RichTextBox x:Name="textBox" HorizontalAlignment="Stretch" Foreground="White" Background="#0f0f0f" AcceptsReturn="True" AcceptsTab="True" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" VerticalAlignment="Stretch" Block.LineHeight="1.333" />
                 </DataTemplate>
             </TabControl.Resources>
         </TabControl>

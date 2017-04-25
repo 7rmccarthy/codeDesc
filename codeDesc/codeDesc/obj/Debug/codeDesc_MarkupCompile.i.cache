@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\maxi\Documents\Schule\Schule\codeDesc\codeDesc\codeDesc\codeDesc\App.xaml
-3-335550477
+4913077915
 
-191821504709
+201276579650
 15-1882593654
-Home.xaml;MainWindow.xaml;TabControl.xaml;
+UserControls\Home.xaml;MainWindow.xaml;UserControls\ProjectSolutionExplorer.xaml;UserControls\TabControl.xaml;
 
 True
 

@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace codeDesc
 {
@@ -21,17 +11,20 @@ namespace codeDesc
     public partial class TabControl : UserControl
     {
         public List<TabItem> tabItems = new List<TabItem>();
+        public List<string> tabcontent = new List<string>();
         public TabControl()
         {
             InitializeComponent();
-            // add a tabItem with + in header 
-            TabItem tabAdd = new TabItem();
-            tabAdd.Header = "+";
+            //// add a tabItem with + in header 
+            TabItem tab = new TabItem();
+            tab.HeaderTemplate = tabDynamic.FindResource("TabHeader") as DataTemplate;
+            tab.ContentTemplate = tabDynamic.FindResource("TabItem") as DataTemplate;
+            tab.Header = "TAB";
 
-            tabItems.Add(tabAdd);
-
+            tabItems.Add(tab);
+            AddTabItem("Name");
             // add first tab
-            this.AddTabItem();
+            //this.AddTabItem();
 
             // bind tab control
             tabDynamic.DataContext = tabItems;
@@ -41,29 +34,6 @@ namespace codeDesc
         #region TabControl
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            TabItem tab = tabDynamic.SelectedItem as TabItem;
-
-            if (tab != null && tab.Header != null)
-            {
-                if (tab.Header.Equals("+"))
-                {
-                    // clear tab control binding
-                    tabDynamic.DataContext = null;
-
-                    // add new tab
-                    TabItem newTab = this.AddTabItem();
-
-                    // bind tab control
-                    tabDynamic.DataContext = tabItems;
-
-                    // select newly added tab item
-                    tabDynamic.SelectedItem = newTab;
-                }
-                else
-                {
-
-                }
-            }
         }
         public void btnDelete_Click(object sender, RoutedEventArgs e)
         {
@@ -75,7 +45,7 @@ namespace codeDesc
 
             if (tab != null)
             {
-                if (tabItems.Count < 3)
+                if (tabItems.Count < 2)
                 {
                     MessageBox.Show("Cannot remove last tab.");
                 }
@@ -102,7 +72,7 @@ namespace codeDesc
                 }
             }
         }
-        private TabItem AddTabItem()
+        public void AddTabItem(string tabname)
         {
             int count = tabItems.Count;
             //string name = "";
@@ -114,18 +84,18 @@ namespace codeDesc
             //}
             // create new tab item
             TabItem tab = new TabItem();
-            tab.Header = string.Format("Tab{0}", count);
-            tab.Name = string.Format("Tab{0}", count);
+            tab.Header = string.Format(tabname);
+            tab.Name = string.Format(tabname);
             tab.HeaderTemplate = tabDynamic.FindResource("TabHeader") as DataTemplate;
+            tab.ContentTemplate = tabDynamic.FindResource("TabItem") as DataTemplate;
 
-            // add controls to tab item, this case I added just a textbox
-            TextBox txt = new TextBox();
-            txt.Name = "txt";
-            tab.Content = txt;
+            
 
             // insert tab item right before the last (+) tab item
-            tabItems.Insert(count - 1, tab);
-            return tab;
+            tabItems.Insert(count , tab);
+            tabDynamic.DataContext = null;
+            tabDynamic.DataContext = tabItems;
+            tabDynamic.SelectedItem = tab;
         }
         #endregion 
     }
