@@ -7,15 +7,20 @@
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         Title="codeDesc"  Style="{StaticResource CustomWindowStyle}" >
        
-        <Grid >
+        <Grid>
+            
         <Grid.RowDefinitions>
             <RowDefinition Height="52"/>
             <RowDefinition Height="70"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
+            
         <Border Grid.Row="0" BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="0,0,0,3">
+            
             <StackPanel Orientation="Horizontal" Grid.Row="0">
+                
                 <Button Content="File" Click="btn_top_menu" ContextMenuService.IsEnabled="False"  RenderTransformOrigin="0.5,0.5"  Margin="10,0,5,0" md:ShadowAssist.ShadowDepth="Depth1">
+                    
                     <Button.ContextMenu>
                         <ContextMenu Foreground="White">
                             <MenuItem Header="New" Foreground="White" Click="btn_top_menu_file_new"/>
@@ -23,71 +28,90 @@
                             <MenuItem Header="Save" Foreground="White" Click="btn_top_menu_file_save"/>
                         </ContextMenu>
                     </Button.ContextMenu>
+                    
                 </Button>
+                
                 <Button Content="Edit" Click="btn_top_menu" ContextMenuService.IsEnabled="False"  RenderTransformOrigin="0.5,0.5" Foreground="White" Margin="5,0,0,0">
+                    
                     <Button.ContextMenu>
                         <ContextMenu  Foreground="White">
-                            <MenuItem Header="Menu 1" Foreground="White"/>
-                            <MenuItem Header="Menu 1" Foreground="White"/>
-                            <MenuItem Header="Menu 1" Foreground="White" />
-                            <MenuItem Header="Menu 1" Foreground="White" />
+                            <MenuItem Header="Menu 1" Click="btn_Edit_" Foreground="White"/>
+                            <MenuItem Header="Menu 1" Click="btn_Edit_" Foreground="White"/>
+                            <MenuItem Header="Menu 1" Click="btn_Edit_" Foreground="White" />
+                            <MenuItem Header="Menu 1" Click="btn_Edit_" Foreground="White" />
                         </ContextMenu>
                     </Button.ContextMenu>
+                    
                 </Button>
+                
                 <Button Content="View" Click="btn_top_menu" ContextMenuService.IsEnabled="False"  RenderTransformOrigin="0.5,0.5"  Foreground="White" Margin="5,0,0,0">
+                    
                     <Button.ContextMenu>
                         <ContextMenu  Foreground="White">
-                            <MenuItem Header="Menu 1" Foreground="White" />
-                            <MenuItem Header="Menu 1" Foreground="White" />
-                            <MenuItem Header="Menu 1" Foreground="White" />
-                            <MenuItem Header="Menu 1" Foreground="White" />
+                            <MenuItem Header="Menu 1" Click="btn_View_" Foreground="White" />
+                            <MenuItem Header="Menu 1" Click="btn_View_" Foreground="White" />
+                            <MenuItem Header="Menu 1" Click="btn_View_" Foreground="White" />
+                            <MenuItem Header="Menu 1" Click="btn_View_" Foreground="White" />
                         </ContextMenu>
                     </Button.ContextMenu>
+                    
                 </Button>
+                
                 <Button Content="Help" Click="btn_top_menu" ContextMenuService.IsEnabled="False"  RenderTransformOrigin="0.5,0.5"  Foreground="White" Margin="5,0,0,0">
+                    
                     <Button.ContextMenu>
                         <ContextMenu  Foreground="White">
-                            <MenuItem Header="Menu 1" Foreground="White" />
-                            <MenuItem Header="Menu 1" Foreground="White" />
-                            <MenuItem Header="Menu 1" Foreground="White" />
-                            <MenuItem Header="Menu 1" Foreground="White" />
+                            <MenuItem Header="Open Help" Click="btn_Help_Open" Foreground="White" />
+                            <MenuItem Header="Support" Click="btn_Help_Support" Foreground="White" />
+                            <MenuItem Header="Send Feedback" Click="btn_Help_Feedback" Foreground="White"/>
+                            <MenuItem Header="Report Bug" Click="btn_Help_BugReport" Foreground="White" />
                         </ContextMenu>
                     </Button.ContextMenu>
+                    
                 </Button>
-                <Button Content="About" Click="btn_top_menu" ContextMenuService.IsEnabled="False"  RenderTransformOrigin="0.5,0.5"  Foreground="White" Margin="5,0,0,0">
-                    <Button.ContextMenu>
-                        <ContextMenu >
-                            <MenuItem Header="Menu 1" Foreground="White" />
-                            <MenuItem Header="Menu 1" Foreground="White" />
-                            <MenuItem Header="Menu 1" Foreground="White" />
-                            <MenuItem Header="Menu 1" Foreground="White" />
-                        </ContextMenu>
-                    </Button.ContextMenu>
-                </Button>
-
+                
+                <Button Content="About" Click="btn_about" ContextMenuService.IsEnabled="False"  RenderTransformOrigin="0.5,0.5"  Foreground="White" Margin="5,0,0,0"/>
+                
             </StackPanel>
         </Border>
+            
         <Grid Grid.Row="2">
+            
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Name="Grid_tab_width" Width="3*"/>
                 <ColumnDefinition Name="Grid_ProjectSolution_width" Width="250"/>
                 <ColumnDefinition Name="SideMenu" Width="25"/>
             </Grid.ColumnDefinitions>
+            
             <Border Grid.Column="0" BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="0,3,3,0">
+                
                 <DockPanel Name="dp_ucs">
                     <uccustom:Home x:Name="Home_uc"  HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Visibility="{Binding Path=HomeVis,RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"/>
-                    <uccustom:TabControl x:Name="TC_uc"  HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Visibility="{Binding Path=TCVis,RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"/>
+                    <uccustom:TabControl TabItemChanged="TC_uc_TabItemChanged" x:Name="TC_uc"  HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Visibility="{Binding Path=TCVis,RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"/>
                 </DockPanel>
+                
             </Border>
+            
             <GridSplitter Name="GridSplitter" Grid.Column="1" Width="5" HorizontalAlignment="Left"/>
+            
             <Border Grid.Column="1" BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="0,3,0,0">
-                <StackPanel >
+                
+                <StackPanel>
+                   
                     <uccustom:ProjectSolutionExplorer HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+                
                 </StackPanel>
+            
             </Border>
+            
             <Border Grid.Column="2" BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="0,3,0,0">
+                
                 <Button HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Height="Auto" Margin="5" Click="btn_project_solution"/>
+            
             </Border>
+            
         </Grid>
+            
     </Grid>
+    
 </Window>

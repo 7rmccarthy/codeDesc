@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -10,32 +11,32 @@ namespace codeDesc
     /// </summary>
     public partial class TabControl : UserControl
     {
+        public event EventHandler<TabItemEventArgs> TabItemChanged;
         public List<TabItem> tabItems = new List<TabItem>();
-        public List<string> tabcontent = new List<string>();
+        public int selected_tab=1;
         public TabControl()
         {
             InitializeComponent();
-            //// add a tabItem with + in header 
             TabItem tab = new TabItem();
             tab.HeaderTemplate = tabDynamic.FindResource("TabHeader") as DataTemplate;
             tab.ContentTemplate = tabDynamic.FindResource("TabItem") as DataTemplate;
-            tab.Header = "TAB";
-
+            tab.Header = "Tab";
             tabItems.Add(tab);
-            AddTabItem("Name");
-            // add first tab
-            //this.AddTabItem();
-
-            // bind tab control
+            
             tabDynamic.DataContext = tabItems;
-
             tabDynamic.SelectedIndex = 0;
         }
+        
+
         #region TabControl
+
+        //(Calvin Metzger)
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            TabItemChanged?.Invoke(this, new TabItemEventArgs(tabDynamic.SelectedIndex,selected_tab));
+            selected_tab = tabDynamic.SelectedIndex;
         }
+
         public void btnDelete_Click(object sender, RoutedEventArgs e)
         {
             string tabName = (sender as Button).CommandParameter.ToString();
@@ -73,22 +74,24 @@ namespace codeDesc
                 }
             }
         }
+
         public void AddTabItem(string tabname)
         {
-            int count = tabItems.Count;
-           
+            int count = tabItems.Count;           
             TabItem tab = new TabItem();
             tab.Header = string.Format(tabname);
-            tab.Name = string.Format(tabname);
+            tab.Name = string.Format(tabname.Substring(0,tabname.LastIndexOf('.')));
             tab.HeaderTemplate = tabDynamic.FindResource("TabHeader") as DataTemplate;
             tab.ContentTemplate = tabDynamic.FindResource("TabItem") as DataTemplate;
 
             // insert tab item right before the last (+) tab item
-            tabItems.Insert(count , tab);
+            tabItems.Insert(count, tab);
             tabDynamic.DataContext = null;
             tabDynamic.DataContext = tabItems;
             tabDynamic.SelectedItem = tab;
         }
         #endregion 
     }
+
+    
 }

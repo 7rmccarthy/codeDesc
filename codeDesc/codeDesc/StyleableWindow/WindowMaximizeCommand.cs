@@ -23,7 +23,7 @@ namespace codeDesc.StyleableWindow
                 if (window.WindowState == WindowState.Maximized)
                 {
                     window.WindowState = WindowState.Normal;
-                    window.IconSource = new ImageSourceConverter().ConvertFromString("../../Icons/RestoreWindow_btn.png") as ImageSource;
+                    window.IconSource = new ImageSourceConverter().ConvertFromString("../../Icons/Maximize_btn.png") as ImageSource;
                 }
                 else
                 {
