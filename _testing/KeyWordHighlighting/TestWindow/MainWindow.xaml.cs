@@ -54,7 +54,7 @@ namespace TestWindow
                 {
                     using (StreamReader sr = new StreamReader(s))
                     {
-                        rtbSetText(richTextBox, string.Join("\n", sr.ReadToEnd().Split('\n')));
+                        rtbSetText(richTextBox, string.Join("", sr.ReadToEnd().Split('\n')));
                     }
 
                     //MessageBox.Show(rtbGetText(richTextBox));
