@@ -1,0 +1,6 @@
+D:\codeDesc\_testing\KeyWordHighlighting\Hightlighting\bin\Debug\Hightlighting.dll
+D:\codeDesc\_testing\KeyWordHighlighting\Hightlighting\bin\Debug\Hightlighting.pdb
+D:\codeDesc\_testing\KeyWordHighlighting\Hightlighting\bin\Debug\ScintillaNET.dll
+D:\codeDesc\_testing\KeyWordHighlighting\Hightlighting\obj\Debug\Highlighting.csprojResolveAssemblyReference.cache
+D:\codeDesc\_testing\KeyWordHighlighting\Hightlighting\obj\Debug\Hightlighting.dll
+D:\codeDesc\_testing\KeyWordHighlighting\Hightlighting\obj\Debug\Hightlighting.pdb

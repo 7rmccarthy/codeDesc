@@ -12,3 +12,5 @@ D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\obj\Debug\TestWindow.Propert
 D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\obj\Debug\TestWindow.csproj.GenerateResource.Cache
 D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\obj\Debug\TestWindow.exe
 D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\obj\Debug\TestWindow.pdb
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\bin\Debug\ColorCode.dll
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\bin\Debug\ScintillaNET.dll

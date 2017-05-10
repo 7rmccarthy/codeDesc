@@ -1,0 +1,17 @@
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\bin\Release\TestWindow.exe.config
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\obj\Release\TestWindow.csprojResolveAssemblyReference.cache
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\obj\Release\MainWindow.g.cs
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\obj\Release\App.g.cs
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\obj\Release\TestWindow_MarkupCompile.cache
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\obj\Release\TestWindow_MarkupCompile.lref
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\bin\Release\TestWindow.exe
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\bin\Release\TestWindow.pdb
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\bin\Release\Hightlighting.dll
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\bin\Release\ScintillaNET.dll
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\bin\Release\Hightlighting.pdb
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\obj\Release\MainWindow.baml
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\obj\Release\TestWindow.g.resources
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\obj\Release\TestWindow.Properties.Resources.resources
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\obj\Release\TestWindow.csproj.GenerateResource.Cache
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\obj\Release\TestWindow.exe
+D:\codeDesc\_testing\KeyWordHighlighting\TestWindow\obj\Release\TestWindow.pdb

@@ -1,65 +1,58 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Diagnostics;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using Microsoft.Win32;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.IO;
 
 namespace TestWindow
 {
-    /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
-
-            richTextBox.IsEnabled = true;
         }
 
-        private string rtbGetText(RichTextBox rtb)
-        {
-            return new TextRange(rtb.Document.ContentStart, rtb.Document.ContentEnd).Text;
-        }
-
-        private void rtbSetText(RichTextBox rtb, string text)
-        {
-            rtb.Document.Blocks.Clear();
-            rtb.Selection.Text = text;
-        }
-
+        //  Open file dialog window button handler
         private void insert_button_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog fileDialog = new OpenFileDialog();
+            //  Create a new openfiledialog
+            Microsoft.Win32.OpenFileDialog fileDialog = new Microsoft.Win32.OpenFileDialog();
+            //  Filter for *.cs files only
             fileDialog.Filter = "c# files|*.cs";
 
-            if (fileDialog.ShowDialog() != null)
+            //  Empty try-catch so the program does not crash upon unwanted file dialog actions
+            try
             {
-                Stream s;
-                
-                if ((s = fileDialog.OpenFile()) != null)
+                //  If the dialog has been opened successfully
+                if (fileDialog.ShowDialog() != null)
                 {
-                    using (StreamReader sr = new StreamReader(s))
+                    Stream s;
+                    
+                    //  If the opened file is valid
+                    if ((s = fileDialog.OpenFile()) != null)
                     {
-                        rtbSetText(richTextBox, string.Join("", sr.ReadToEnd().Split('\n')));
+                        //  Read the file
+                        using (StreamReader sr = new StreamReader(s))
+                        {
+                            //  Add the read text to our scintilla object
+                            Highlighting.Highlighting.AddText(sr.ReadToEnd());
+                            //  Assign the windowsformshost child
+                            wfHost.Child = Highlighting.Highlighting.LanguageEditor;
+                            
+                            //  Different method
+                            //webBrowser.NavigateToString(new CodeColorizer().Colorize(sr.ReadToEnd(), Languages.CSharp));
+                        }
                     }
-
-                    //MessageBox.Show(rtbGetText(richTextBox));
                 }
             }
+            catch (Exception)
+            {
+            }
+        }
+
+        //  Windowsformshost loading handler
+        private void wfHost_Loaded(object sender, RoutedEventArgs e)
+        {
+            Highlighting.Highlighting.Initialise();
         }
     }
 }
