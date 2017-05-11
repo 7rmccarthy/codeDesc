@@ -4,3 +4,9 @@ D:\codeDesc\_testing\KeyWordHighlighting\Hightlighting\bin\Debug\ScintillaNET.dl
 D:\codeDesc\_testing\KeyWordHighlighting\Hightlighting\obj\Debug\Highlighting.csprojResolveAssemblyReference.cache
 D:\codeDesc\_testing\KeyWordHighlighting\Hightlighting\obj\Debug\Hightlighting.dll
 D:\codeDesc\_testing\KeyWordHighlighting\Hightlighting\obj\Debug\Hightlighting.pdb
+C:\Users\maxi\Documents\Schule\codeDesc\codeDesc\_testing\KeyWordHighlighting\Hightlighting\bin\Debug\Hightlighting.dll
+C:\Users\maxi\Documents\Schule\codeDesc\codeDesc\_testing\KeyWordHighlighting\Hightlighting\bin\Debug\Hightlighting.pdb
+C:\Users\maxi\Documents\Schule\codeDesc\codeDesc\_testing\KeyWordHighlighting\Hightlighting\bin\Debug\ScintillaNET.dll
+C:\Users\maxi\Documents\Schule\codeDesc\codeDesc\_testing\KeyWordHighlighting\Hightlighting\obj\Debug\Highlighting.csprojResolveAssemblyReference.cache
+C:\Users\maxi\Documents\Schule\codeDesc\codeDesc\_testing\KeyWordHighlighting\Hightlighting\obj\Debug\Hightlighting.dll
+C:\Users\maxi\Documents\Schule\codeDesc\codeDesc\_testing\KeyWordHighlighting\Hightlighting\obj\Debug\Hightlighting.pdb

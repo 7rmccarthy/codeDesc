@@ -8,8 +8,25 @@
         mc:Ignorable="d"
         Title="test window for keyword highlighting" Height="350" Width="525" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="insert_button" Content="Choose file and insert data" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="485" BorderBrush="Crimson"
+        <TabControl Name="tabDynamic" ItemsSource="{Binding}" SelectionChanged="tabDynamic_SelectionChanged">
+            <TabControl.Resources>
+                <DataTemplate x:Key="TabHeader" DataType="TabItem">
+                    <DockPanel>
+                        <Button Name="btnDelete" DockPanel.Dock="Right" Margin="5,0,0,0" Padding="0" Click="btnDelete_Click" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type TabItem}}, Path=Name}">
+                            <Image Source="../Icons/Close_black_btn.png" Height="11" Width="11"></Image>
+                        </Button>
+                        <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType={x:Type TabItem}}, Path=Header}" />
+                    </DockPanel>
+                </DataTemplate>
+                <DataTemplate x:Key="TabItem" DataType="TabItem">
+                    <DockPanel>
+                        <Button x:Name="insert_button" Content="Choose file and insert data" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="485" BorderBrush="Crimson"
                 ClickMode="Release" Click="insert_button_Click"/>
-        <WindowsFormsHost Margin="10,45,22,10" Name="wfHost" Loaded="wfHost_Loaded" />
+                        <WindowsFormsHost Margin="10,45,22,10" Name="wfHost" Loaded="wfHost_Loaded"  />
+                    </DockPanel>
+                </DataTemplate>
+            </TabControl.Resources>
+        </TabControl>
+        
     </Grid>
 </Window>
