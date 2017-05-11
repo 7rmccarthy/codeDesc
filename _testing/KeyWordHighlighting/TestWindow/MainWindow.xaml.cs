@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Windows;
 using System.IO;
+using ScintillaNET;
+using System.Windows.Forms.Integration;
 
 namespace TestWindow
 {
@@ -9,6 +11,13 @@ namespace TestWindow
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private Scintilla editor = null;
+
+        public WindowsFormsHost Editor
+        {
+            get { return new WindowsFormsHost() { Child = editor }; }
         }
 
         //  Open file dialog window button handler
@@ -36,7 +45,7 @@ namespace TestWindow
                             //  Add the read text to our scintilla object
                             Highlighting.Highlighting.AddText(sr.ReadToEnd());
                             //  Assign the windowsformshost child
-                            wfHost.Child = Highlighting.Highlighting.LanguageEditor;
+                            editor = Highlighting.Highlighting.LanguageEditor;
                             
                             //  Different method
                             //webBrowser.NavigateToString(new CodeColorizer().Colorize(sr.ReadToEnd(), Languages.CSharp));
