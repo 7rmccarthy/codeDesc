@@ -4,7 +4,6 @@ using SN = ScintillaNET;
 namespace Highlighting
 {
     /*
-
         ToDo:   Overload Initialise method to accept both custom and detected languages
                 Let user customise colour schemes
                 Customise autocompletion to accept custom variable names loaded into the form
@@ -33,8 +32,8 @@ namespace Highlighting
             //  Add event handler
             languageEditor.CharAdded += charAdded;
 
-            loadConfiguration();
-            automaticCodeFolding();
+            LoadConfiguration();
+            AutomaticCodeFolding();
         }
 
         //  Lets the user add text
@@ -44,7 +43,7 @@ namespace Highlighting
         }
 
         //  Loads a (momentarily) custom c# configuration
-        private static void loadConfiguration()
+        private static void LoadConfiguration()
         {
             //  Restore default values
             languageEditor.StyleResetDefault();
@@ -54,30 +53,30 @@ namespace Highlighting
 
             //  Configure the style settings (Cpp standard language used for values we do not define)
             languageEditor.Margins[0].Width = 40;
-            languageEditor.Styles[SN.Style.Cpp.Default].ForeColor = System.Drawing.Color.Silver;
+            languageEditor.Styles[SN.Style.Cpp.Default].ForeColor = Color.Silver;
 
             //  Comments
-            languageEditor.Styles[SN.Style.Cpp.Comment].ForeColor = System.Drawing.Color.FromArgb(0, 128, 0);            //    Green
-            languageEditor.Styles[SN.Style.Cpp.CommentLine].ForeColor = System.Drawing.Color.FromArgb(0, 128, 0);        //    Green
-            languageEditor.Styles[SN.Style.Cpp.CommentLineDoc].ForeColor = System.Drawing.Color.FromArgb(128, 128, 128); //    Gray
+            languageEditor.Styles[SN.Style.Cpp.Comment].ForeColor = Color.FromArgb(0, 128, 0);            //    Green
+            languageEditor.Styles[SN.Style.Cpp.CommentLine].ForeColor = Color.FromArgb(0, 128, 0);        //    Green
+            languageEditor.Styles[SN.Style.Cpp.CommentLineDoc].ForeColor = Color.FromArgb(128, 128, 128); //    Gray
 
             //  Numbers
-            languageEditor.Styles[SN.Style.Cpp.Number].ForeColor = System.Drawing.Color.Olive;
+            languageEditor.Styles[SN.Style.Cpp.Number].ForeColor = Color.Olive;
 
             //  Keywords
-            languageEditor.Styles[SN.Style.Cpp.Word].ForeColor = System.Drawing.Color.Blue;
-            languageEditor.Styles[SN.Style.Cpp.Word2].ForeColor = System.Drawing.Color.Turquoise;
+            languageEditor.Styles[SN.Style.Cpp.Word].ForeColor = Color.Blue;
+            languageEditor.Styles[SN.Style.Cpp.Word2].ForeColor = Color.Turquoise;
 
             //  Strings and characters
-            languageEditor.Styles[SN.Style.Cpp.String].ForeColor = System.Drawing.Color.FromArgb(163, 21, 21);           //    Red
-            languageEditor.Styles[SN.Style.Cpp.Character].ForeColor = System.Drawing.Color.FromArgb(163, 21, 21);        //    Red
-            languageEditor.Styles[SN.Style.Cpp.Verbatim].ForeColor = System.Drawing.Color.FromArgb(163, 21, 21);         //    Red
-            languageEditor.Styles[SN.Style.Cpp.StringEol].BackColor = System.Drawing.Color.Pink;
+            languageEditor.Styles[SN.Style.Cpp.String].ForeColor = Color.FromArgb(163, 21, 21);           //    Red
+            languageEditor.Styles[SN.Style.Cpp.Character].ForeColor = Color.FromArgb(163, 21, 21);        //    Red
+            languageEditor.Styles[SN.Style.Cpp.Verbatim].ForeColor = Color.FromArgb(163, 21, 21);         //    Red
+            languageEditor.Styles[SN.Style.Cpp.StringEol].BackColor = Color.Pink;
 
             //  Misc
-            languageEditor.Styles[SN.Style.Cpp.Operator].ForeColor = System.Drawing.Color.Purple;
-            languageEditor.Styles[SN.Style.Cpp.Preprocessor].ForeColor = System.Drawing.Color.Maroon;
-            languageEditor.Styles[SN.Style.Cpp.GlobalClass].ForeColor = System.Drawing.Color.LightGreen;
+            languageEditor.Styles[SN.Style.Cpp.Operator].ForeColor = Color.Purple;
+            languageEditor.Styles[SN.Style.Cpp.Preprocessor].ForeColor = Color.Maroon;
+            languageEditor.Styles[SN.Style.Cpp.GlobalClass].ForeColor = Color.LightGreen;
 
             //  Set the standard language to c++
             languageEditor.Lexer = SN.Lexer.Cpp;
@@ -88,7 +87,7 @@ namespace Highlighting
         }
 
         //  Automatically folds the code using braces
-        private static void automaticCodeFolding()
+        private static void AutomaticCodeFolding()
         {
             //  Instruct the lexer to calculate folding
             languageEditor.SetProperty("fold", "1");
@@ -124,11 +123,11 @@ namespace Highlighting
         private static void charAdded(object sender, SN.CharAddedEventArgs e)
         {
             //  Find the word start
-            var currentPos = languageEditor.CurrentPosition;
-            var wordStartPos = languageEditor.WordStartPosition(currentPos, true);
+            int currentPos = languageEditor.CurrentPosition;
+            int wordStartPos = languageEditor.WordStartPosition(currentPos, true);
 
             //  Display the autocompletion list
-            var lenEntered = currentPos - wordStartPos;
+            int lenEntered = currentPos - wordStartPos;
             if (lenEntered > 0)
             {
                 if (!languageEditor.AutoCActive)
