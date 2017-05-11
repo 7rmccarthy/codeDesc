@@ -1,0 +1,5 @@
+D:\codeDesc\_testing\KeyWordHighlighting\Hightlighting\bin\Release\Hightlighting.dll
+D:\codeDesc\_testing\KeyWordHighlighting\Hightlighting\bin\Release\Hightlighting.pdb
+D:\codeDesc\_testing\KeyWordHighlighting\Hightlighting\bin\Release\ScintillaNET.dll
+D:\codeDesc\_testing\KeyWordHighlighting\Hightlighting\obj\Release\Hightlighting.dll
+D:\codeDesc\_testing\KeyWordHighlighting\Hightlighting\obj\Release\Hightlighting.pdb
