@@ -10,20 +10,6 @@
     <Grid>
         <Button x:Name="insert_button" Content="Choose file and insert data" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="485" BorderBrush="Crimson"
                 ClickMode="Release" Click="insert_button_Click"/>
-        <!--<WindowsFormsHost Margin="10,45,22,10" Name="wfHost" Loaded="wfHost_Loaded" Child="{Binding Editor}" />-->
-        <TabControl Name="tabControl" Margin="0,35,0,0">
-            <TabControl.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock>                            
-                        <TextBlock Text="{Binding Header}"/>
-                    </TextBlock>
-                </DataTemplate>
-            </TabControl.ItemTemplate>
-            <TabControl.ContentTemplate>
-                <DataTemplate>
-                    <ContentControl Content="{Binding Editor}" />
-                </DataTemplate>
-                </TabControl.ContentTemplate>
-        </TabControl>
+        <WindowsFormsHost Margin="10,45,22,10" Name="wfHost" Loaded="wfHost_Loaded" />
     </Grid>
 </Window>

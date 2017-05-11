@@ -83,7 +83,15 @@ namespace codeDesc {
         #line hidden
         
         
-        #line 94 "..\..\MainWindow.xaml"
+        #line 90 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal codeDesc.TabControl TC_uc;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 95 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.GridSplitter GridSplitter;
         
@@ -303,11 +311,14 @@ namespace codeDesc {
             this.Home_uc = ((codeDesc.Home)(target));
             return;
             case 26:
-            this.GridSplitter = ((System.Windows.Controls.GridSplitter)(target));
+            this.TC_uc = ((codeDesc.TabControl)(target));
             return;
             case 27:
+            this.GridSplitter = ((System.Windows.Controls.GridSplitter)(target));
+            return;
+            case 28:
             
-            #line 108 "..\..\MainWindow.xaml"
+            #line 109 "..\..\MainWindow.xaml"
             ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.btn_project_solution);
             
             #line default
