@@ -7,6 +7,12 @@
              xmlns:helper="clr-namespace:codeDesc.Helper"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+
+        
+
+    </UserControl.Resources>
+
     <Grid>
         <TabControl TabIndex="1" Grid.Column="1" SelectionChanged="TabControl_SelectionChanged" Margin="10"  Name="tabDynamic" ItemsSource="{Binding }">
             <TabControl.Resources>
@@ -19,8 +25,11 @@
                     </DockPanel>
                 </DataTemplate>
                 <DataTemplate x:Key="TabItem" DataType="TabItem">
-                    <RichTextBox  Name="Textbox" FontSize="16" FontFamily="Consolas" helper:RichTextBoxHelper.DocumentXaml="{Binding Path=TextBoxContent, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}" HorizontalAlignment="Stretch" Foreground="White" Background="#0f0f0f" AcceptsReturn="True" AcceptsTab="True" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" VerticalAlignment="Stretch" Block.LineHeight="1.333" >
-                    </RichTextBox>
+                    <ScrollViewer     RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Stretch"         
+                        Style="{StaticResource FavsScrollViewer}">
+                        <RichTextBox  Name="Textbox" FontSize="16" FontFamily="Consolas" helper:RichTextBoxHelper.DocumentXaml="{Binding Path=TextBoxContent, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}" HorizontalAlignment="Stretch" Foreground="White" Background="#0f0f0f" AcceptsReturn="True" AcceptsTab="True" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" VerticalAlignment="Stretch" Block.LineHeight="1.333" >
+                        </RichTextBox>
+                    </ScrollViewer>
                 </DataTemplate>
             </TabControl.Resources>
         </TabControl>

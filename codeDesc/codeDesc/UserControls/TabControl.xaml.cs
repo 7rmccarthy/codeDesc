@@ -9,6 +9,8 @@ namespace codeDesc
     /// <summary>
     /// Interaktionslogik für TabControl.xaml
     /// </summary>
+    
+    
     public partial class TabControl : UserControl
     {
         public event EventHandler<TabItemEventArgs> TabItemChanged;
@@ -25,6 +27,7 @@ namespace codeDesc
             
             tabDynamic.DataContext = tabItems;
             tabDynamic.SelectedIndex = 0;
+            
         }
         
 
@@ -79,8 +82,8 @@ namespace codeDesc
         {
             int count = tabItems.Count;           
             TabItem tab = new TabItem();
-            tab.Header = string.Format(tabname);
-            tab.Name = string.Format(tabname.Substring(0,tabname.LastIndexOf('.')));
+            tab.Header = string.Format(tabname);            
+            //tab.Name = string.Format(tabname.Substring(0,tabname.LastIndexOf('.')));
             tab.HeaderTemplate = tabDynamic.FindResource("TabHeader") as DataTemplate;
             tab.ContentTemplate = tabDynamic.FindResource("TabItem") as DataTemplate;
 

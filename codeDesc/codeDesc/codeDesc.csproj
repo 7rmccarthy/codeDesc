@@ -63,6 +63,8 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Compile Include="Helper\RichTextBoxHelper.cs" />
+    <Compile Include="KeyWordHighlighting\Highlighting.cs" />
+    <Compile Include="KeyWordHighlighting\KeyWord.cs" />
     <Compile Include="New_Dialog.xaml.cs">
       <DependentUpon>New_Dialog.xaml</DependentUpon>
     </Compile>
@@ -157,6 +159,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icons\Close_black_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="KeyWordHighlighting\C#Keywords.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

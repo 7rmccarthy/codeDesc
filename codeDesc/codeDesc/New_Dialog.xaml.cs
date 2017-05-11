@@ -34,21 +34,20 @@ namespace codeDesc
             }
         }
 
+
         private void btn_finish(object sender, RoutedEventArgs e)
         {
             
-            if (txt_Project_Name.Text != "")
-            {
-                ProjectName = txt_Project_Name.Text;
+            //if (txt_Project_Name.Text != "")
+            //{
+                //ProjectName = txt_Project_Name.Text;
                 DialogResult = true;
-            }               
-            else
-            {
-                MessageBox.Show("Wrong Name");
-                DialogResult = false;
-            }
-                
-
+            //}               
+            //else
+            //{
+                //MessageBox.Show("Wrong Name");
+                //DialogResult = false;
+            //}
         }
     }
 }

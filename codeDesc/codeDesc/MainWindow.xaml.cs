@@ -17,7 +17,6 @@ namespace codeDesc
             InitializeComponent();
             HomeVis = Visibility.Visible;
             TCVis = Visibility.Collapsed;
-            
         }
 
         #region ActionBar
@@ -220,13 +219,11 @@ namespace codeDesc
             }
             this.TextBoxContent = this.textBoxList[e.Index];
         }
-
+        public static Highlighting h = new Highlighting();
         //Convert String to Document
         public static FlowDocument StringToDocument(string text)
-        {
-            var document = new FlowDocument();
-            document.Blocks.Add(new Paragraph(new Run(text)));
-            return document;
+        {   
+                return h.createDocument(text);
         }
 
         //Convert Document to String 
@@ -294,4 +291,3 @@ namespace codeDesc
         }
     }
 }
-
